@@ -12,6 +12,13 @@
 		776B13FA219AF68200E03B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776B13F8219AF68200E03B5B /* Main.storyboard */; };
 		776B13FC219AF68400E03B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776B13FB219AF68400E03B5B /* Assets.xcassets */; };
 		776B13FF219AF68400E03B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776B13FD219AF68400E03B5B /* LaunchScreen.storyboard */; };
+		776B140B219AF9EE00E03B5B /* DataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B140A219AF9EE00E03B5B /* DataProcess.swift */; };
+		776B140D219AFA1200E03B5B /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B140C219AFA1200E03B5B /* MainService.swift */; };
+		776B140F219AFA2D00E03B5B /* IMainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B140E219AFA2D00E03B5B /* IMainService.swift */; };
+		776B1411219AFA5F00E03B5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B1410219AFA5F00E03B5B /* Constants.swift */; };
+		776B1415219AFB5100E03B5B /* CellMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B1413219AFB5100E03B5B /* CellMainTableView.swift */; };
+		776B1416219AFB5100E03B5B /* CellMainTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776B1414219AFB5100E03B5B /* CellMainTableView.xib */; };
+		776B1418219AFBC300E03B5B /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B1417219AFBC300E03B5B /* tableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		776B13FB219AF68400E03B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776B13FE219AF68400E03B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776B1400219AF68400E03B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776B140A219AF9EE00E03B5B /* DataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcess.swift; sourceTree = "<group>"; };
+		776B140C219AFA1200E03B5B /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		776B140E219AFA2D00E03B5B /* IMainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMainService.swift; sourceTree = "<group>"; };
+		776B1410219AFA5F00E03B5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		776B1413219AFB5100E03B5B /* CellMainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMainTableView.swift; sourceTree = "<group>"; };
+		776B1414219AFB5100E03B5B /* CellMainTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellMainTableView.xib; sourceTree = "<group>"; };
+		776B1417219AFBC300E03B5B /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		776B13F3219AF68200E03B5B /* orangeBank */ = {
 			isa = PBXGroup;
 			children = (
+				776B1409219AF9B800E03B5B /* Common */,
+				776B1408219AF9AE00E03B5B /* View */,
+				776B1407219AF99900E03B5B /* ViewControllers */,
+				776B1406219AF98900E03B5B /* Model */,
 				776B13F4219AF68200E03B5B /* AppDelegate.swift */,
-				776B13F6219AF68200E03B5B /* ViewController.swift */,
-				776B13F8219AF68200E03B5B /* Main.storyboard */,
 				776B13FB219AF68400E03B5B /* Assets.xcassets */,
 				776B13FD219AF68400E03B5B /* LaunchScreen.storyboard */,
 				776B1400219AF68400E03B5B /* Info.plist */,
 			);
 			path = orangeBank;
+			sourceTree = "<group>";
+		};
+		776B1406219AF98900E03B5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				776B140A219AF9EE00E03B5B /* DataProcess.swift */,
+				776B140C219AFA1200E03B5B /* MainService.swift */,
+				776B140E219AFA2D00E03B5B /* IMainService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		776B1407219AF99900E03B5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				776B1412219AFB3700E03B5B /* CellMain */,
+				776B13F6219AF68200E03B5B /* ViewController.swift */,
+				776B1417219AFBC300E03B5B /* tableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		776B1408219AF9AE00E03B5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				776B13F8219AF68200E03B5B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		776B1409219AF9B800E03B5B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				776B1410219AFA5F00E03B5B /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		776B1412219AFB3700E03B5B /* CellMain */ = {
+			isa = PBXGroup;
+			children = (
+				776B1413219AFB5100E03B5B /* CellMainTableView.swift */,
+				776B1414219AFB5100E03B5B /* CellMainTableView.xib */,
+			);
+			path = CellMain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +185,7 @@
 			files = (
 				776B13FF219AF68400E03B5B /* LaunchScreen.storyboard in Resources */,
 				776B13FC219AF68400E03B5B /* Assets.xcassets in Resources */,
+				776B1416219AFB5100E03B5B /* CellMainTableView.xib in Resources */,
 				776B13FA219AF68200E03B5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +199,12 @@
 			files = (
 				776B13F7219AF68200E03B5B /* ViewController.swift in Sources */,
 				776B13F5219AF68200E03B5B /* AppDelegate.swift in Sources */,
+				776B140D219AFA1200E03B5B /* MainService.swift in Sources */,
+				776B1418219AFBC300E03B5B /* tableViewController.swift in Sources */,
+				776B1415219AFB5100E03B5B /* CellMainTableView.swift in Sources */,
+				776B140F219AFA2D00E03B5B /* IMainService.swift in Sources */,
+				776B140B219AF9EE00E03B5B /* DataProcess.swift in Sources */,
+				776B1411219AFA5F00E03B5B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
